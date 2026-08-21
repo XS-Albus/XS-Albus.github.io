@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TileMath — Tile Calculator</title>
+<meta name="description" content="A tile calculator built around feet-inch fractions. Core calculator works fully offline.">
+<style>
+  :root{--bg:#fbfafa;--fg:#201e1d;--muted:#6b6664;--line:#e2dfde;--accent:#0088b0;--card:#f3f2f2}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#181615;--fg:#f3f2f2;--muted:#a59f9d;--line:#332f2e;--accent:#4cc2e6;--card:#232020}
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-text-size-adjust:100%}
+  .wrap{max-width:44rem;margin:0 auto;padding:4rem 1.25rem 5rem}
+  a{color:var(--accent)}
+  h1{font-size:2rem;line-height:1.2;margin:0 0 .5rem;letter-spacing:-.015em}
+  .tag{color:var(--muted);font-size:1.05rem;margin:0 0 2.5rem}
+  h2{font-size:1.05rem;margin:2.5rem 0 .75rem}
+  ul{padding-left:1.15rem;margin:0}
+  li{margin:.35rem 0}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.95em}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;
+    padding:1rem 1.25rem;margin:1.5rem 0}
+  hr{border:0;border-top:1px solid var(--line);margin:3rem 0 1.5rem}
+  footer{color:var(--muted);font-size:.875rem;display:flex;gap:1.25rem;flex-wrap:wrap}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>TileMath</h1>
+<p class="tag">A tile calculator that speaks feet, inches, and sixteenths.</p>
+
+<p>Stop converting <span class="mono">12&prime;&nbsp;3-1/2&Prime;</span> into a decimal just to
+figure out how many tiles you need. TileMath has a purpose-built fraction keypad, so you type
+measurements the way they're written on the tape.</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Tile count for any number of rooms or sections</li>
+  <li>Boxes to buy, rounded up to whole boxes</li>
+  <li>Cost estimate by tile or by box</li>
+  <li>Grout spacing included in the math</li>
+  <li>Waste allowance for straight, diagonal, and herringbone layouts</li>
+  <li>Metric mode &mdash; meters, centimeters, millimeters</li>
+</ul>
+
+<div class="card">
+  <strong>Offline-first.</strong> The core calculator works fully offline with
+  no account required. Your calculations stay on your device; the app shows a
+  small banner ad. See the
+  <a href="privacy.html">privacy policy</a>.
+</div>
+
+<h2>Support</h2>
+<p>Questions, bug reports, or feature requests:
+<a href="mailto:tilemath.app@gmail.com">tilemath.app@gmail.com</a></p>
+
+<hr>
+<footer>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="mailto:tilemath.app@gmail.com">Contact</a>
+</footer>
+
+</div>
+</body>
+</html>
