@@ -28,14 +28,15 @@
 
 <h2>Analytics and crash reporting</h2>
 <p>TileMath uses Google Analytics for Firebase and Firebase Crashlytics to understand how the app is used and to fix crashes. These collect app events (for example: that a calculation was completed, which layout pattern was chosen, how long the keypad stayed open, whether the language or unit setting was changed, and whether a purchase was started or restored), an app instance identifier, device model, operating system version, and an approximate region derived from your IP address. Crash reports include diagnostic information about the state of the app when it stopped working.</p>
-<p><strong>We do not collect the values you type.</strong> Room dimensions, tile sizes and prices are not sent by our analytics or configuration services; you can choose to share results through another app — a completed calculation is recorded only as a broad size range, never as the measurements themselves. This data is processed by Google under
+<p>When Analytics collection is enabled, the SDK may automatically record the product ID, product name and price of the store’s ad-removal purchase. This is the store product price, not a tile price you enter.</p>
+<p><strong>We do not collect the values you type.</strong> Room dimensions, tile sizes and tile prices you enter are not sent by our analytics or configuration services; you can choose to share results through another app — a completed calculation is recorded only as a broad size range, never as the measurements themselves. This data is processed by Google under
 <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
 <h2>Remote configuration</h2>
 <p>TileMath uses Firebase Remote Config to enable or disable the optional banner at the end of the purchase list. Fetching configuration uses Firebase installation identifiers and contacts Google services; a foreground update connection can receive changes. Configuration requests do not include your dimensions, prices or purchase-list details. Buying ad removal prevents ad requests; remote configuration remains an app-functionality service. For details about how Firebase handles this data, see <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</p>
 
 <h2>In-app purchases</h2>
-<p>You can remove ads with a one-time purchase. The transaction is handled entirely by the App Store or Google Play — we never see your payment details. The app saves a local marker of your ad-removal entitlement and contacts the store to check product information and restore purchases, including at startup.</p>
+<p>You can remove ads with a one-time purchase. The transaction is handled entirely by the App Store or Google Play — we do not receive your payment-card details. The app saves a local marker of your ad-removal entitlement and contacts the store to check product information and restore purchases, including at startup.</p>
 
 <h2>Your choices</h2>
 <p><strong>Tracking (iOS):</strong> when first asked, you can choose "Ask App Not to Track". You can change this anytime in iOS Settings → Privacy &amp; Security → Tracking. If you decline, the advertising SDK cannot access your IDFA. You can continue using the calculator, and ads may still be shown.</p>
