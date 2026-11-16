@@ -41,6 +41,10 @@ videos, photos or audio to developer-operated servers for processing. It accesse
 the media you select and creates local working files and exports. When you choose
 Share, the selected app can receive your exported file; that app's privacy practices
 apply. System photo or backup services may also handle your media under your own settings.</p>
+<p>Supported exports can retain the original capture date and location available in
+the selected media. This metadata stays with the exported file and may be visible
+to recipients when you save or share it. Vidsmith reads it from the selected media
+on your device and does not include it in analytics.</p>
 <p>The app stores preferences, export counters and purchase-entitlement status locally.
 Temporary processing files are cleared as part of app cleanup. Saved gallery exports
 remain until you delete them using your device's controls. Removing the app does not
@@ -67,6 +71,8 @@ the app's analytics collection setting starts off. Selecting Allow analytics ena
 optional usage analytics; the app applies your choice through Firebase's collection
 and consent controls. Declining does not restrict app features, purchasing or
 restoration. You can change your choice in Settings.</p>
+<p><strong>Android 1.2:</strong> If you turn off usage analytics and allow it again
+while the app is still running, collection resumes the next time you fully restart the app.</p>
 <p><strong>Earlier Android test versions:</strong> analytics is enabled by default and
 can be turned off in Settings. This paragraph describes those older versions, not
 the fresh-install behavior of Android 1.0 with the consent prompt.</p>
@@ -132,6 +138,8 @@ in this policy, and additional consent will be sought where required.</p>
 <p>视频编辑和导出在你的设备上完成。Vidsmith 不会把视频、照片或音频上传至开发者运营的服务器进行处理。
 应用访问你选择的媒体，并在本机生成工作文件和导出文件。你主动使用“分享”时，所选应用可以接收导出文件，
 其隐私规则适用于后续处理。系统相册或备份服务也可能根据你的设置处理媒体。</p>
+<p>受支持的导出格式可保留所选媒体中可读取的原拍摄日期和位置。保存或分享后，接收方可能看到这些信息。
+Vidsmith 仅在本机从所选媒体读取这些信息，不将其用于使用统计。</p>
 <p>设置、导出计数和购买权益状态保存在本机。临时处理文件随应用清理流程清除；已保存到相册的导出文件由你通过设备管理，
 卸载应用不一定会删除这些相册文件。</p>
 
@@ -149,6 +157,7 @@ SDK 还处理应用实例标识、设备与应用信息，以及由 IP 地址推
 <p><strong>带有首次询问的 Android 1.0：</strong>全新安装时，应用的统计采集设置默认关闭。
 选择“允许统计”后启用可选的使用统计；应用通过 Firebase 的采集和同意控制应用你的选择。
 拒绝不限制应用功能、购买或恢复权益，可随时在设置中更改。</p>
+<p><strong>Android 1.2：</strong>如果你关闭使用统计后在同一次运行期间再次允许，统计采集会在下次完整启动应用时恢复。</p>
 <p><strong>较早的 Android 测试版本：</strong>统计默认开启，可在设置中关闭。
 此段描述旧测试版本，不代表带有首次询问的 Android 1.0 全新安装行为。</p>
 <p><strong>当前 iPhone 版本：</strong>统计默认开启，可通过设置中的使用数据开关关闭。
